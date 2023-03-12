@@ -20,3 +20,8 @@
 进入`prepare`目录，执行`sh prepare.sh`命令，即可划分数据集
 
 <img width="570" alt="image" src="https://user-images.githubusercontent.com/66876429/224523112-9814a64c-6d9e-4e78-974e-b30ee139fd1e.png">
+
+### tips
+网速较慢时可使用`github`镜像:
+
+`git clone https://ghproxy.com/https://github.com/btobab/prepare.git`
