@@ -7,10 +7,6 @@
 
 <img width="265" alt="image" src="https://user-images.githubusercontent.com/66876429/224522920-e90303bc-b97f-452e-9b71-eb1e1f16815b.png">
 
-然后新建空文件夹`images`, `labels`
-
-<img width="335" alt="image" src="https://user-images.githubusercontent.com/66876429/224523086-f5605145-3a7a-46ec-b1a7-f940ef32d8c5.png">
-
 将`prepare`文件夹clone到与`dataset`同级的目录下，然后修改`voc2txt`文件中的`classes`类别
 
 <img width="178" alt="image" src="https://user-images.githubusercontent.com/66876429/224522944-c1cd49a6-ca6e-46d5-b3a5-b45a9202eda2.png">
