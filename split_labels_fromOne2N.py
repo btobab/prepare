@@ -1,9 +1,9 @@
 import os
 
 modes = ["train", "val", "test"]
-images_path = "../dataset/images"
-pre_labels_path = "../dataset/prelabels"
-post_labels_path = "../dataset/labels"
+images_path = "../data/images"
+pre_labels_path = "../data/prelabels"
+post_labels_path = "../data/labels"
 
 for mode in modes:
     mode_images_path = os.path.join(images_path, mode)
