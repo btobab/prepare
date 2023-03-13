@@ -21,8 +21,8 @@ def convert(size, box):
 
 
 def convert_annotation(image_id):
-    in_file = open('../dataset/Annotations/%s.xml' % (image_id), encoding='utf-8')
-    out_file = open('../dataset/prelabels/%s.txt' % (image_id), 'w', encoding='utf-8')
+    in_file = open('../data/Annotations/%s.xml' % (image_id), encoding='utf-8')
+    out_file = open('../data/prelabels/%s.txt' % (image_id), 'w', encoding='utf-8')
     tree = ET.parse(in_file)
     root = tree.getroot()
     size = root.find('size')
@@ -42,9 +42,9 @@ def convert_annotation(image_id):
         out_file.write(str(cls_id) + " " + " ".join([str(a) for a in bb]) + '\n')
 
 
-if not os.path.exists("../dataset/prelabels"):
-    os.mkdir("../dataset/prelabels")
+if not os.path.exists("../data/prelabels"):
+    os.mkdir("../data/prelabels")
 
-file_ids = os.listdir("../dataset/Annotations/")
+file_ids = os.listdir("../data/Annotations/")
 for file_id in file_ids:
     convert_annotation(file_id[:-4])
