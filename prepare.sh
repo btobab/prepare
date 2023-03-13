@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../dataset
+cd ../data
 for name in `ls`
 do
   if [ $name = "images" ]
@@ -40,5 +40,5 @@ python voc2txt.py
 echo "convert VOC to Txt"
 python split_labels_fromOne2N.py
 echo "split labels to dir"
-rm -rf ../dataset/train.txt ../dataset/val.txt ../dataset/test.txt ../dataset/prelabels/
+rm -rf ../data/train.txt ../data/val.txt ../data/test.txt ../data/prelabels/
 echo "delete train.txt val.txt test.txt prelabels/"
